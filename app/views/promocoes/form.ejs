@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<form action="/promocoes" method="post">
+			<div>
+				<input type="text" id="titulo" name="titulo" placeholder="Coloque o título do livro"/>
+				<select name="livro[id]">
+					<%for(var i=0; i< lista.length; i++){%>
+						<option value="<%=lista[i].id%>"><%=lista[i].titulo%></option>
+					<%}%>
+					
+				</select>
+			</div>
+			<button type="submit">Cadastrar promocao relampago</button>
+		</form>
+	</body>
+</html>

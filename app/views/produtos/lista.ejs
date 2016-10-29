@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<h1>Books</h1>
+		<table>
+			<tr>
+				<td>Titulo</td>
+				<td>Descricao</td>
+				<td>Preço</td>
+			</tr>
+			<% for(var i=0; i < books.length; i++) {%>
+				<tr>
+					<td><%=books[i].titulo%></td>
+					<td><%=books[i].descricao%></td>
+					<td><%=books[i].preco%></td>
+				</tr>
+			<%}%>
+		</table>
+	</body>
+</html>
